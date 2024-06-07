@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+/* STYLE THE HEADER */
+nav {
+    height: 80px;
+    background: #061F57;
+}
+
+nav img {
+    width: 180px;
+    position: absolute;
+    top: 12px;
+    left: 2%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: #FFF;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* INICIO: AGREGADO POR MI */
+nav ul li a i {
+    margin-left: 10px;
+}
+/* FINAL: AGREGADO POR MI */
+label #btn, label #cancel {
+    color: #FFF;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav img {
+        left: 6%;
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #061F57;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    label #btn {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+}
+
+/* STYLE THE FOOTER */
+.container-footer {
+    background-color: #061F57;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/* --------------------------------- */
+/*  STYLE THE CONTAINERS THE LOGIN   */
+.container-login {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 25px 0px;
+    height: 503px;
+}
+
+.container-center {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 300px;
+    height: 100%;
+    padding: 10px 30px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+.container-center label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-center input {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 2px #061F57 solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.container-center input:focus {
+    outline: none;
+}
+
+.container-center button {
+    background-color: #061F57;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container-img {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-google {
+    width: 100%;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B7B7B7;
+}
+
+.container-google img {
+    width: 40px;
+    height: 100%;
+    padding: 5px;
+}
+
+.container-google a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+/*  STYLE THE CONTAINERS THE TABLE   */
+.container-table {
+    /* border: 1px red solid; */
+    background-color: #D9D9D9;
+    padding: 15px 100px;
+}
+
+.container-table h1 {
+    font-size: 16px;
+}
+
+.container-table hr {
+    border: none;
+    background-color: #061F57;
+    width: 260px;
+    height: 5px;
+}
+
+/*          STYLE THE TABLE          */
+.table {
+    /* border: 1px red solid; */
+    display: flex;
+}
+
+.table thead {
+    /* border: 1px blue solid; */
+    width: 50%;
+    text-align: left;
+}
+
+.table thead th {
+    padding: 5px;
+}
+
+.table tbody {
+    /* border: 1px blue solid; */
+    width: 50%;
+}
+
+.table tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.table td {
+    display: flex;
+    padding: 5px;
+}
+
+/* --------------------------------- */
+/*          STYLE THE TABLET         */
+
+
+/* --------------------------------- */
+/*          STYLE THE MOVIL          */
